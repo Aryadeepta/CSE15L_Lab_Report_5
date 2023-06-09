@@ -14,7 +14,7 @@ It turns out that bash was unable to interpet the newline characters from the ou
 To fix this, i used the `echo -e "$VAR"` command to read in the different newline characters and read them in the same way\
 ## The Twist
 There is actually a huge problem that the TA would never find out about\
-![code](Code.jpg)\
+![code](Code.png)\
 There is nothing more to this problem than the java and bash files, and no other commands were run other than those shown in the screenshots above\
 However, the 'fixed' grader is actually flawed, and is not able to correctly grade the java file\
 This is because there is also a bug in the java file, where the student added a '\n' character after each println\
