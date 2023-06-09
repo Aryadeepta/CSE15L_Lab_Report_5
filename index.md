@@ -21,13 +21,13 @@ This is because there is also a bug in the java file, where the student added a 
 This means that the output actually had 2 newlines, not 1, between arguments, as shown below:\
 Furthermore, the `echo` command was missing the `$` before the parentheses, so both `$ANS` and `$EXPECTED` had values of "echo"\
 Finally, the correct newline character is actually "\r\n"\
-![manual output](ManualOutput.png)\
+![manual output](ManualOutput.png)
 ## Full Solution
 First, the java file should remove the `+"\n"` from the println\
 Secondly, the bash script should use the term `$(echo -e "$2")`\
 Finally, the input itslf should be changed to `bash grade.sh "1" "Test\r\n1"`\
 Here is the solution manifested:\
-![full solution](final.png)\
+![full solution](final.png)
 # Part 2
 I have been avoiding vim like the plague, so it is pretty cool to have learned.\
 After asking some of my family members who specialized in CS when I went back home, almost none of them had ever used it, with one family friend saying that he had used it once ever to fix a very important code in a time crunch because his company couldn't edit the code through a normal IDE.\
